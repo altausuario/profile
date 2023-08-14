@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    alert()
     $.getJSON('../json/datos.json', function (data) {
         var dp = data.DATOS_PERSONALES;
         $('#nombre').text(dp.cel);
