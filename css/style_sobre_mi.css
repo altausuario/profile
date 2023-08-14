@@ -1,4 +1,30 @@
 #sobreMi .content{
     height: 100%;
     background-color: brown;
+    border: 1px green solid;
+}
+
+#sobreMi .content .title{
+    margin-top: 5vw;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#sobreMi .content .cuerpo{
+    width: 94%;
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+#sobreMi .content .cuerpo .img{
+    width: 50%;
+    
+}
+#sobreMi .content .cuerpo .datos{
+    width: 50%;
+    text-align: justify;
+    font-size: 21px;
 }

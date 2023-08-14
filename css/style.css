@@ -1,8 +1,11 @@
 * {
-    background: black;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     color: #fff;
+}
+body{
+    background-color: black;
 }
 
 .fixed-header {
@@ -13,13 +16,13 @@
     padding: 10px;
     text-align: center;
     border-radius: 10em;
-    z-index: 200;
+    z-index: 1000;
 }
-.fixed-header button:not(.bti){
+.fixed-header .btn_scroll:not(.bti){
     margin: 0 0 20px 0;
 }
 
-.fixed-header button{
+.fixed-header .btn_scroll{
     display: block;
     width: 2em;
     height: 2em;
@@ -30,7 +33,7 @@
     cursor: pointer;
 }
 
-.fixed-header button i{
+.fixed-header .btn_scroll i{
     background-color: transparent;
 }
 
@@ -39,7 +42,7 @@
 }
 
 .scrollable {
-    height: calc(100vh - 17px);
+    height: calc(120vh);
     overflow: auto;
 }
 

@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="PORTFOLIO ALVARO TAPIAS TORRIJOS">
+    <meta property="og:description" content="CV presentation portfolio">
+    <meta property="og:image" content="img/foto_hojavida.png">
+    <meta property="og:url" content="https://altausuario.github.io/profile/">
+
     <title>Portafolio ATT</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,31 +20,31 @@
 </head>
 
 <body>
-    <header>
+    <div>
         <div class="fixed-header">
-
-            <button class="btn_scroll" id="scrollInicio">
+            <!-- BTN INICIO -->
+            <article class="btn_scroll" id="scrollInicio">
                 <i class="fa-solid fa-house"></i>
-            </button>
-
-            <button class="btn_scroll" id="scrollSobreMi">
+            </article>
+            <!-- BTN SOBRE MI -->
+            <article class="btn_scroll" id="scrollSobreMi">
                 <i class="fa-solid fa-user-tie"></i>
-            </button>
-
-            <button class="btn_scroll" id="scrollConocimientos">
+            </article>
+            <!-- BTN CONOCIMIENTOS -->
+            <article class="btn_scroll" id="scrollConocimientos">
                 <i class="fa-solid fa-code"></i>
-            </button>
-
-            <button class="btn_scroll" id="scrollProyectos">
+            </article>
+            <!-- BTN PROCYETOS -->
+            <article class="btn_scroll" id="scrollProyectos">
                 <i class="fa-solid fa-laptop-code"></i>
-            </button>
-
-            <button class="btn_scroll" class="bti" id="scrollContato">
+            </article>
+            <!-- CONTATOS -->
+            <article class="btn_scroll bti" id="scrollContato">
                 <i class="fa-regular fa-address-card"></i>
-            </button>
+            </article>
         </div>
-
-        <div class="full-height" id="inicio">
+        <!-- INICIO -->
+        <section class="full-height" id="inicio">
             <div class="fondo"></div>
             <div class="content">
                 <div class="img">
@@ -51,25 +56,34 @@
                     <h5>Software Developer</h5>
                 </div>
             </div>
-        </div>
-        <div class="scrollable" id="sobreMi">
+        </section>
+        <!-- SOBRE MI -->
+        <section class="scrollable" id="sobreMi">
             <div class="content">
+                <h1 class="title">sobre mi</h1>
+                <section class="cuerpo">
+                    <div class="img"></div>
+                    <div class="datos">
+                        <p id="sobre_mi">
 
+                        </p>
+                    </div>
+                </section>
             </div>
-        </div>
-
-        <div class="scrollable" id="conocimientos">
+        </section>
+        <!-- CONOCIMIENTO -->
+        <section class="scrollable" id="conocimientos">
             <h1>conocimientos</h1>
-        </div>
-
-        <div class="scrollable" id="proyectos">
+        </section>
+        <!-- PROCYETOS -->
+        <section class="scrollable" id="proyectos">
             <h1>procyetos</h1>
-        </div>
-
-        <div class="scrollable" id="contato">
+        </section>
+        <!-- CONTATOS -->
+        <section class="scrollable" id="contato">
             <h1>contato</h1>
-        </div>
-    </header>
+        </section>
+    </div>
     <footer>
 
     </footer>
