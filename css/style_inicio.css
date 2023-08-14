@@ -14,17 +14,19 @@
     position: absolute;
 }
 
-#inicio .content {
-    background-color: transparent;
+#inicio .contents {
     height: 100%;
-    position: relative;
+    /* position: relative;
     z-index: 500;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: red; */
 }
-
-#inicio .content .img {
+#inicio .contents .imgs{
+    background-color: blue;
+}
+#inicio .contents .img {
     width: 15vw;
     height: 15vw;
     display: flex;
@@ -33,35 +35,33 @@
     border-radius: 50%;
     box-shadow: 5px -1px 9px #707070de;
     overflow: hidden;
-    margin: 20px;
 }
 
-#inicio .content .img img {
+#inicio .contents .img img {
     height: 16vw;
     position: relative;
     vertical-align: middle;
     border-style: none;
 }
 
-#inicio .content .datos {
-    background-color: transparent;
-    text-align: center;
+#inicio .contents .datos {
+    /* text-align: center; */
+    background-color: aqua;
+    width: 100%;
 }
 
-#inicio .content .datos h4 {
-    background-color: transparent;
-    font-size: 22px;
+#inicio .contents .datos h4 {
+    /* font-size: 22px; */
 }
 
-#inicio .content .datos h2 {
-    background-color: transparent;
+#inicio .contents .datos h2 {
     font-family: 'Abril Fatface', cursive;
     font-size: 30px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-#inicio .content .datos h5 {
+#inicio .contents .datos h5 {
     background-color: transparent;
     font-size: 18px;
 }

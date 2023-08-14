@@ -5,7 +5,7 @@
     color: #fff;
 }
 body{
-    background-color: black;
+    background-color: black !important;
 }
 
 .fixed-header {
@@ -42,7 +42,7 @@ body{
 }
 
 .scrollable {
-    height: calc(120vh);
+    min-height: calc(120vh);
     overflow: auto;
 }
 
