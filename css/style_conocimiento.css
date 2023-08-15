@@ -1,12 +1,13 @@
-.contents-conocimiento {
+.contents-conocimiento{
     width: 100%;
     height: 70vw;
-    background-color: rgb(101, 101, 101);
+    background-color: #656565;
     padding-bottom: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden !important;
+    overflow: hidden!important;
     position: relative;
     top: -0.2vw;
 }
@@ -37,6 +38,12 @@
     font-weight: 700;
     font-size: 4vw;
     letter-spacing: 0.1vw;
+}
+.h1-title-conocimiento{
+    font-family: "Anton",sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing: .1vw;
     text-transform: uppercase;
     position: absolute;
     left: 32%;
@@ -57,13 +64,25 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    margin-top: 6vw;
+    margin-top: 3vw;
     overflow: hidden !important;
 }
 
 
 .main-container-left,
 .main-container-right {
+    margin-top: 8vw;
+    overflow: hidden!important;
+}
+
+.main-container-left{
+    margin-left: 2vw;
+}
+
+.main-container-right{
+    margin-right: 2vw;
+}
+.main-container-left, .main-container-right {
     width: 28%;
     height: 35vw;
     display: flex;
@@ -72,7 +91,6 @@
     position: relative;
     top: 5vw;
 }
-
 .main-container-left {
     margin-left: 2vw;
 }
@@ -81,8 +99,7 @@
     margin-right: 2vw;
 }
 
-.container-tech-left,
-.container-tech-right {
+.container-tech-left, .container-tech-right {
     width: 100%;
     height: 10vw;
     border-radius: 25px;
@@ -91,8 +108,7 @@
     position: relative;
 }
 
-.container-tech-left::before,
-.container-tech-right::before {
+.container-tech-left::before, .container-tech-right::before {
     content: "";
     position: absolute;
     top: 0;
@@ -215,3 +231,29 @@
     text-align: justify !important;
     line-height: 1.6;
   }
+.style-logo-tech {
+    width: 5.51vw;
+    height: 5.51vw;
+    padding: 0.2vw;
+    margin-top: 1.5vw;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.style-text__title-tech {
+    color: #fff;
+    text-shadow: 1px 2px 3px #000;
+    font-family: "Inter",sans-serif;
+    font-size: 1vw;
+    font-weight: 900!important;
+    letter-spacing: 1px;
+    position: relative;
+    top: 0.5vw;
+}
