@@ -1,30 +1,77 @@
-#sobreMi .contents{
-    background-color: brown;
+#sobreMi .contents {
+    background-color: #363636;
+    width: 100%;
+    height: 55vw;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
-#sobreMi .contents .cuerpo{
-    width: 94%;
-    margin: auto;
-    margin-top: 15px;
-}
-
-#sobreMi .contents .cuerpo .img{
+#sobreMi .contents .h1_sobremi {
+    color: #fff;
+    font-weight: 700;
     text-align: center;
+    letter-spacing: .15vw;
+    text-transform: uppercase;
+    margin-top: 5vw;
+}
+#sobreMi .contents .cont_sobremi{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1vw;
+    margin-top: 1.5vw;
+    position: relative;
+    margin: auto;
+    top: 1.5vw;
 }
 
-#sobreMi .contents .cuerpo .datos{
+#sobreMi .contents .cont_img {
+    width: auto;
+    height: auto;
+}
+
+#sobreMi .contents .img {
+    width: 18vw;
+    height: 26vw;
+    border: 0.7vw solid #ffb633;
+    border-radius: 56% 34% 30% 25%/74% 40% 99% 58%;
+    top: 0;
+    overflow: hidden;
+}
+
+#sobreMi .contents .img_container {
+    width: 16vw;
+    height: 26vw;
+    position: relative;
+    bottom: 1.4vw;
+    left: 1.1vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobreMi .contents .img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    margin-right: 1vw;
+}
+
+#sobreMi .contents .datos {
     text-align: justify;
     font-size: 18.2px;
+    margin-left: 5vw;
 }
 
-#sobreMi .contents a{
+#sobreMi .contents a {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     box-shadow: 0.1em 0.15em 0.2em #333;
     border-radius: 1.1vw 0.3vw 1.1vw 0.3vw;
     z-index: 0;
-    margin-bottom: 30px; 
-    margin-right: 25%;
-} 
+    position: relative;
+    left: 55%;
+    top: 60px;
+}

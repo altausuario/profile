@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_inicio.css">
     <link rel="stylesheet" href="css/style_sobre_mi.css">
+
+    <link rel="stylesheet" href="css/style_responsive.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="js/funcion_datos.js"></script>
     <script defer src="js/funciones_scroll.js"></script>
@@ -54,39 +56,35 @@
         <section class="full-height" id="inicio">
             <div class="fondo"></div>
             <div class="contents">
-                <div class="row">
-                    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 imgs">
-                        <div class="img">
-                            <img src="img/foto_hojavida.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <div class="datos">
-                            <input type="text" class="form-control">
-                            <h4>!HOLA¡ Soy</h4>
-                            <h2 id="nombre">Alvaro Tapias Torrijos</h2>
-                            <h5>Software Developer</h5>
-                        </div>
-                    </div>
+                <div class="img">
+                    <img src="img/foto_hojavida.png" alt="">
+                </div>
+                <div class="datos">
+                    <h4>!HOLA¡ Soy</h4>
+                    <h2 id="nombre">Alvaro Tapias Torrijos</h2>
+                    <h5>Software Developer</h5>
                 </div>
             </div>
+        </section>
         </section>
         <!-- SOBRE MI -->
         <section class="scrollable" id="sobreMi">
             <div class="contents">
-                <h1 class="text-center pt-5 text-uppercase display-4">sobre mi</h1>
-                <div class="cuerpo row">
-                    <div class="img col-12 col-xs-12 col-sm-12 col-md-4 col-lg-6 col-xl-6">
-                        <img src="img/alvaro.png" alt="">
-                    </div>
-                    <div class="datos col-12 col-xs-12 col-sm-12 col-md-4 col-lg-6 col-xl-6">
-                        <p id="sobre_mi"></p>
+                <h1 class="h1_sobremi">sobre mi</h1>
+                <section class="cont_sobremi">
+                <div class="cont_img">
+                    <div class="img">
+                        <article class="img_container">
+                            <img src="img/alvaro.png" alt="">
+                        </article>
                     </div>
                 </div>
-                <div class="d-flex">
-                    <a href="pdfs/curriculum-vitae.pdf" download="CV_AlvaroTapiasTorrijos_AGOSTO-2023"
-                        class="btn btn-light ml-auto ">DESCARGAR CV</a>
+                <div class="datos">
+                    <p id="sobre_mi"></p>
                 </div>
+            </section>
+                <a href="pdfs/curriculum-vitae.pdf" download="CV_AlvaroTapiasTorrijos_AGOSTO-2023"
+                    class="btn btn-light ml-auto ">DESCARGAR CV</a>
             </div>
         </section>
         <!-- CONOCIMIENTO -->

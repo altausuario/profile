@@ -1,0 +1,84 @@
+/* PARA CELULARES */
+@media (max-width: 768px) {
+    .full-height {
+        height: 92vh;
+    }
+
+    .fixed-header {
+        display: none;
+    }
+
+    #inicio .contents {
+        width: 100%;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 12vw !important;
+        position: relative;
+        left: 0;
+    }
+
+    #inicio .contents .img {
+        width: 60vw;
+        height: 60vw;
+        background-color: #fff;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    #inicio .contents .img img {
+        height: 61vw;
+    }
+
+    #sobreMi .contents {
+        height: 100%;
+    }
+
+    #sobreMi .contents .cont_sobremi {
+        display: block;
+        width: 90%;
+        margin: 0;
+    }
+
+    #sobreMi .contents .img {
+        margin: auto;
+        width: 58vw;
+        height: 66vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+
+    #sobreMi .contents .img_container {
+        width: 56vw;
+        height: 66vw;
+    }
+
+    #sobreMi .contents a {
+        position: fixed;
+        top: 0;
+        left: 0;
+        border-radius: 0.3vw 1.1vw 0.3vw 1.1vw;
+    }
+}
+
+/* PARA TABLES */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #inicio .contents {
+        width: 55%;
+        top: 10vw;
+    }
+
+    #sobreMi .contents {
+        height: 60vw;
+    }
+
+    #sobreMi .contents .cont_sobremi {
+        width: 95%;
+    }
+
+    #sobreMi .contents a {
+        left: 50%;
+    }
+}
