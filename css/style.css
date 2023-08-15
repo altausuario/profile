@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "Anton",sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -50,4 +51,14 @@ body{
 #conocimientos,
 #proyectos{
     margin-top: 20px;
+}
+
+.h1-title{
+    font-family: "Anton",sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing: .1vw;
+    text-transform: uppercase;
+    margin-left: 36.5%;
+    margin-top: 3vw;
 }
