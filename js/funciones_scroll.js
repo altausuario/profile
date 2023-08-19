@@ -6,6 +6,7 @@ function cambiarColorIcono(btn) {
 
 $(function () {
     cambiarColorIcono($('#scrollInicio'))
+    setTimeout(animation_home, 1000)
     var clicking = false;
     $('#scrollInicio').click(function () {
         clicking = true
@@ -76,6 +77,7 @@ $(function () {
         if (!clicking) {
             if (windowTop >= divInicio - margin && windowTop < divSobreMi - margin) {
                 buton = $('#scrollInicio')
+                animation_home()
                 cambiarColorIcono(buton)
             } else if (windowTop >= divSobreMi - margin && windowTop < divConocimientos - margin) {
                 buton = $('#scrollSobreMi')

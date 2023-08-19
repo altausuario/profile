@@ -39,7 +39,7 @@
 
 .container-subtitle-project {
     width: 80%;
-    color: #bdbdbd;
+    color: #bdbdbd !important;
     text-transform: uppercase;
 }
 
@@ -192,7 +192,7 @@
 .container-description-project {
     width: 100%;
     padding: 0.3vw 0 0.3vw 0;
-    text-align: left;
+    text-align: justify;
 }
 
 .container-description-project>.text-description {

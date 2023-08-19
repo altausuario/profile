@@ -1,0 +1,30 @@
+/* ANIMACIONES INICIO */
+
+.animation-image-home-active {
+    animation: animation-image-home-active 3s forwards;
+}
+
+@keyframes animation-image-home-active {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animation-greet-home-active {
+    transform: scale(0);
+    animation: animation-greet-home 1s forwards;
+}
+
+@keyframes animation-greet-home {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

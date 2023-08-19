@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
-    font-family: "Anton",sans-serif;
+    font-family: "Anton", sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
 }
-body{
+
+body {
     background-color: black !important;
 }
 
@@ -19,11 +20,12 @@ body{
     border-radius: 10em;
     z-index: 1000;
 }
-.btn_scroll:not(.bti){
+
+.btn_scroll:not(.bti) {
     margin: 0 0 20px 0;
 }
 
-.btn_scroll{
+.btn_scroll {
     display: block;
     width: 2em;
     height: 2em;
@@ -32,32 +34,39 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
-    padding-top: 0.3vw;
 }
 
-.scroll-active{
+.btn_scroll i {
+    position: relative;
+    top: 0.4vw;
+}
+
+.scroll-active {
     -webkit-animation: animatedNeonBorder 2.5s infinite;
     animation: animatedActiveBorder 2.5s infinite
 }
 
-.scroll-active i{
+.scroll-active i {
     color: #ff0000 !important;
 }
+
 @keyframes animatedActiveBorder {
     0% {
         border: none;
         box-shadow: none;
     }
-    50%{
-        border: 1px solid #ff0000;
+
+    50% {
         box-shadow: 0 0 0.5vw #ff0000, 0 0 0.55vw #ff0000, 0 0 0.6vw #ff0000, 0 0 0.65vw #ff0000, 0 0 0.7vw #ff0000, 0 0 0.95vw #ff0000;
     }
-    100%{
+
+    100% {
         border: none;
         box-shadow: none;
     }
 }
-.fixed-header .btn_scroll i{
+
+.fixed-header .btn_scroll i {
     background-color: transparent;
 }
 
@@ -72,11 +81,11 @@ body{
 
 #sobreMi,
 #conocimientos,
-#proyectos{
+#proyectos {
     margin-top: 20px;
 }
 
-.icon{
+.icon {
     background-color: #fff;
     padding: 0.1vw;
     border-radius: 50%;

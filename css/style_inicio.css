@@ -37,6 +37,7 @@
     border-radius: 50%;
     box-shadow: 5px -1px 9px #707070de;
     overflow: hidden;
+    display: none;
 }
 
 #inicio .contents .img img {
@@ -48,16 +49,16 @@
 
 #inicio .contents .datos {
     text-align: center;
+    display: none;
 }
 
 #inicio .contents .datos h4 {
-
+    width: 100%;
     font-family: "Anton", sans-serif;
     font-weight: 700;
     font-size: 1.5vw;
     letter-spacing: .1vw;
     text-transform: uppercase;
-
 }
 
 #inicio .contents .datos h2 {

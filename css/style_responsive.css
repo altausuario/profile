@@ -8,6 +8,7 @@
         display: none;
     }
 
+    /* INICIO */
     #inicio .contents {
         width: 100%;
         height: 100vw;
@@ -19,8 +20,16 @@
         left: 0;
     }
 
+    #inicio .contents .datos h4 {
+        font-size: 7vw;
+    }
+
     #inicio .contents .datos h2 {
         font-size: 7vw;
+    }
+
+    #inicio .contents .datos h5 {
+        font-size: 5vw;
     }
 
     #inicio .contents .img {
@@ -63,6 +72,13 @@
         top: 0;
         left: 0;
         border-radius: 0.3vw 1.1vw 0.3vw 1.1vw;
+    }
+
+    /* SOBRE MI */
+
+    #sobreMi .contents::before {
+        top: 182VW;
+        height: 315VW;
     }
 
     /* COMOCIMIENTOS */
@@ -174,19 +190,291 @@
         top: 118vw;
         margin-top: 1.2rem;
         overflow-y: scroll;
-      }
-      
-      .title-estudios {
+    }
+
+    .title-estudios {
         font-weight: bold;
         font-size: 1.75rem;
-      }
-      
-      .text-estudios {
+    }
+
+    .text-estudios {
         width: 95%;
         font-size: 1.2rem !important;
         line-height: 1.3;
-      }
+    }
 
+    /* PROYECTOS */
+
+    .container-procyetos {
+        background-color: #363636;
+        padding-top: 3em;
+        padding-bottom: 3rem;
+    }
+
+    .h1-project {
+        font-size: 10vw;
+        margin-left: 20%;
+    }
+
+    .container-subtitle-project,
+    .container-experience {
+        width: 95%;
+    }
+
+    .container-subtitle-project {
+        position: relative;
+        top: 1rem;
+    }
+
+    .container-experience {
+        margin-top: -1.8rem;
+    }
+
+    .container-experience h5 {
+        font-size: 1.2rem;
+    }
+
+    .title-experience {
+        font-size: 1.9rem;
+    }
+
+    .text-subtitle-project,
+    .text-experience {
+        font-size: 1.15rem;
+    }
+
+    .content-projects {
+        height: auto;
+        margin: auto;
+        margin-top: 1vw;
+        padding-bottom: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-project {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 3vw;
+        padding-bottom: 5rem;
+        flex-direction: column-reverse;
+    }
+
+    .number-project {
+        font-size: 4rem;
+    }
+
+    .content-project span {
+        z-index: 1;
+    }
+
+    .content-project-imgs {
+        height: 47vw !important;
+    }
+
+    .content-projects>.content-project>span {
+        width: 95%;
+        margin-right: 0;
+        margin-top: 1.6rem;
+    }
+
+    .content-projects>.content-project>span::before {
+        display: none;
+    }
+
+
+    .content-projects>.content-project>span::after {
+        display: none;
+    }
+
+    .container-tech {
+        width: 90% !important;
+        height: auto !important;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .container-description-project>.text-description-project {
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    .title-project {
+        font-size: 1.9rem;
+    }
+
+    .container-icon-techs-project {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .container-icon-techs-project img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .icon-js,
+    .icon-react,
+    .icon-responsive {
+        width: 2.7rem !important;
+        height: 2.7rem !important;
+    }
+
+    .container-project-see a {
+        font-size: 1.35rem;
+        text-shadow: 0.05rem 0.1rem 0.15rem #2a2a2a;
+        box-shadow: 0.05rem 0.1rem 0.15rem #2a2a2a;
+        padding: 0.2rem 1.5rem 0.2rem 1.5rem;
+        border: 0.1rem solid #ffb633;
+        border-radius: 0.4rem;
+    }
+
+    .container-project-see {
+        width: 13.5rem !important;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem !important;
+    }
+
+    .container-project-see  a{
+        margin-right: 1vw;
+    }
+
+    /* CONTACTOS */
+
+    .container-contacts {
+        width: 100%;
+        height: auto;
+        background-color: #aaaaaa;
+        padding-top: 1.5vw;
+      }
+    
+      .container-contacts::before {
+        top: 1vw;
+        /* border-top: 0.4vw solid #ffb633; */
+      }
+    
+      .contacts-logos{
+        width: 85%;
+        height: auto;
+        padding: 2vw;
+        margin-bottom: 8vw;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 0.2vw;
+        margin-top: 5vw;
+      }
+    
+      .contacts-logos .card {
+        width: 30vw !important;
+        height: 30vw;
+        border: 0.9vw solid #fff;
+      }
+    
+      .instagram-container, .email-contact{
+        margin-top: 2vw !important;
+      }
+      
+      .contacts-logos .card .logo-i {
+        line-height: 4vw;
+        font-size: 13vw;
+        color: #2a2a2a;
+        text-align: center;
+        border-radius: 50%;
+        margin-top: 5vw;
+      }
+    
+      .h1-contact {
+        font-size: 10vw !important;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        margin-bottom: 0% !important;
+        margin-top: 12vw !important;
+        margin-left: 15%;
+      }
+    
+    
+      .email-contact, .instagram-container {
+        margin-top: 6vw; 
+      }
+    
+      .email-contact,
+      .content-footer,
+      .text-developer {
+        position: relative;
+      }
+    
+      .container-footer {
+        height: 4.5rem;
+        display: flex;
+      }
+    
+      .container-footer,
+      .content-footer,
+      .text-developer,
+      img {
+        position: relative;
+      }
+    
+      .content-footer {
+        width: 70%;
+        height: 7.5vw;
+        margin-left: 6%;
+        /* background-color: red; */
+      }
+    
+      .content-footer img {
+        width: 8vw;
+        height: 4.4vw;
+        top: 1vw;
+      }
+    
+      .arrow-up {
+        font-size: 4vw;
+      }
+    
+      .text-developer {
+        color: #fff;
+        font-size: 2.9vw;
+        font-weight: 500 !important;
+        text-align: center;
+      }
+    
+      .container-whatsapp {
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 40%;
+        margin-top: 0 !important;
+        margin-left: 4.1vw;
+        background: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#83ff8f),
+          to(#248f34)
+        );
+      }
+    
+      .whatsapp-container {
+        position: relative; 
+        top: 0.2vw;
+        display: flex !important ;
+      }
+    
+    
+    
+      .whatsapp-container .logo-i {
+        font-size: 7.5vw !important;
+        color: #fff !important;
+      }
 }
 
 /* PARA TABLES */
@@ -194,7 +482,7 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     #inicio .contents {
         width: 60%;
-        top: 10vw;
+        top: 22vw;
     }
 
     #sobreMi .contents {
@@ -215,7 +503,33 @@
 
     /* CONOCIMIENTOS */
 
-    .container-computer::before{
+    .container-computer::before {
         right: 35.5vw;
     }
+
+    /* SOBRE MI */
+
+    .content-project{
+        height: auto;
+    }
+
+    .content-projects>.content-project>span::before {
+        display: none;
+    }
+
+
+    .content-projects>.content-project>span::after {
+        display: none;
+    }
+
+    /* PROYECTOS */
+
+    .text-developer{
+        color: #fff;
+        font-size: 1.2vw;
+        font-weight: 300 !important;
+        text-align: center;
+        top: 1vw;
+        right: 6vw;
+      }
 }
