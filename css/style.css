@@ -12,18 +12,18 @@ body{
 .fixed-header {
     position: fixed;
     top: 20%;
-    left: 15px;
+    right: 15px;
     background-color: rgb(61, 60, 60);
     padding: 10px;
     text-align: center;
     border-radius: 10em;
     z-index: 1000;
 }
-.fixed-header .btn_scroll:not(.bti){
+.btn_scroll:not(.bti){
     margin: 0 0 20px 0;
 }
 
-.fixed-header .btn_scroll{
+.btn_scroll{
     display: block;
     width: 2em;
     height: 2em;
@@ -32,8 +32,31 @@ body{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding-top: 0.3vw;
 }
 
+.scroll-active{
+    -webkit-animation: animatedNeonBorder 2.5s infinite;
+    animation: animatedActiveBorder 2.5s infinite
+}
+
+.scroll-active i{
+    color: #ff0000 !important;
+}
+@keyframes animatedActiveBorder {
+    0% {
+        border: none;
+        box-shadow: none;
+    }
+    50%{
+        border: 1px solid #ff0000;
+        box-shadow: 0 0 0.5vw #ff0000, 0 0 0.55vw #ff0000, 0 0 0.6vw #ff0000, 0 0 0.65vw #ff0000, 0 0 0.7vw #ff0000, 0 0 0.95vw #ff0000;
+    }
+    100%{
+        border: none;
+        box-shadow: none;
+    }
+}
 .fixed-header .btn_scroll i{
     background-color: transparent;
 }
@@ -43,7 +66,7 @@ body{
 }
 
 .scrollable {
-    min-height: calc(120vh);
+    height: calc(100vh -17vh);
     overflow: auto;
 }
 
@@ -53,12 +76,8 @@ body{
     margin-top: 20px;
 }
 
-.h1-title{
-    font-family: "Anton",sans-serif;
-    font-weight: 700;
-    font-size: 4vw;
-    letter-spacing: .1vw;
-    text-transform: uppercase;
-    margin-left: 36.5%;
-    margin-top: 3vw;
+.icon{
+    background-color: #fff;
+    padding: 0.1vw;
+    border-radius: 50%;
 }

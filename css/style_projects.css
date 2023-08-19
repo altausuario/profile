@@ -1,0 +1,323 @@
+.container-procyetos {
+    width: 100%;
+    height: auto;
+    background-color: #363636;
+    padding-top: 2vw;
+    padding-bottom: 5vw;
+    overflow: hidden !important;
+    position: relative;
+    bottom: 0.5vw;
+}
+
+.container-procyetos::before {
+    content: "";
+    position: absolute;
+    margin-top: -8.5vw !important;
+    width: 0;
+    height: 242vw;
+    z-index: 100;
+    transition: all .6s;
+}
+
+.h1-project{
+    font-family: "Anton",sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing: .1vw;
+    text-transform: uppercase;
+    margin-left: 36.5%;
+    margin-top: 3vw;
+}
+
+.h1-project::before {
+    content: "proyectos";
+    position: absolute;
+    background: linear-gradient(90deg, #f5621e, #f1f388);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-subtitle-project {
+    width: 80%;
+    color: #bdbdbd;
+    text-transform: uppercase;
+}
+
+.container-experience {
+    width: 70%;
+    color: #bdbdbd;
+}
+
+.container-subtitle-project,
+.container-experience {
+    display: grid;
+    place-items: center;
+    font-family: "Inter", sans-serif;
+    margin: auto;
+    margin-top: 2vw;
+}
+
+.container-experience {
+    margin-top: 2vw;
+}
+
+.container-experience h5 {
+    font-size: 1.7vw;
+}
+
+.title-experience {
+    font-weight: bold;
+    font-size: 2.2vw;
+}
+
+.text-experience {
+    width: 100%;
+    font-weight: 400;
+    color: #bdbdbd;
+}
+
+.text-subtitle-project,
+.text-experience {
+    text-align: center !important;
+    line-height: 1.6;
+    font-size: 1.4vw;
+}
+
+.text-subtitle-project {
+    font-weight: 700;
+}
+
+.content-projects {
+    height: auto;
+    margin: auto;
+    margin-top: 1vw;
+    padding-bottom: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-project {
+    position: relative;
+    width: 100%;
+    height: 28vw;
+    margin: auto;
+    margin-top: 3vw;
+    padding-bottom: 2vw;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container-text-tech {
+    width: auto !important;
+    height: auto !important;
+}
+
+.content-project span {
+    z-index: 1;
+}
+
+.content-projects>.content-project>span {
+    width: 45%;
+    height: 86%;
+    display: flex;
+    margin-right: 3.4vw;
+    margin-top: 1.9vw;
+}
+
+.content-projects>.content-project>span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 87%;
+    margin-right: 2.1vw;
+    margin-top: 1.15vw;
+    border-top: 0.8vw double #ffb633;
+    border-right: 0.8vw double #ffb633;
+}
+
+
+.content-projects>.content-project>span::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 51.4%;
+    width: 20%;
+    height: 87%;
+    margin-left: -1.15vw !important;
+    margin-top: 2.3vw;
+    border-bottom: 0.8vw double #ffb633;
+    border-left: 0.8vw double #ffb633;
+}
+
+
+.content-project-imgs {
+    overflow: hidden;
+    border: 0.4rem solid #ffb633;
+}
+
+
+.container__text-tech__project-1{
+    width: 90%;
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.container-tech {
+    width: 45% !important;
+    height: auto !important;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 2vw;
+}
+
+.number-project {
+    background: linear-gradient(#ffb633, #fff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 4.2vw;
+    font-weight: 700;
+    position: relative;
+    top: 1.2vw;
+}
+
+.container-description-project {
+    width: 100%;
+    padding: 0.3vw 0 0.3vw 0;
+    text-align: left;
+}
+
+.container-description-project>.text-description {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6vw;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #6d6d6d;
+}
+
+.title-project {
+    font-size: 2.9vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.slime-imgs{
+    width: 100%;
+    height: 100%;
+    animation: slide 8s infinite alternate ease-in-out;
+}
+
+.slime-imgs ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+
+.slime-imgs li {
+    list-style: none;
+    width: 100%;
+}
+
+.slime-imgs img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    12.5% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    37.5% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    62.5% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+.container-project-see {
+    width: 35% !important;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5vw;
+}
+
+.container-icon-techs-project {
+    width: auto;
+    height: auto;
+}
+
+.container-icon-techs-project {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0.5vw;
+}
+
+.container-icon-techs-project img {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 0.5vw;
+}
+
+.container-icon-techs-project .icon {
+    background-color: #fff;
+    padding: 0.1vw;
+    border-radius: 50%;
+}
+
+
+.container-project-see a {
+    font-family: 'anton', sans-serif;
+    font-size: 1.3vw;
+    color: #fff !important;
+    letter-spacing: 1px;
+    display: grid;
+    place-items: center;
+    padding: 0.2vw 1.5vw 0.2vw 1.5vw;
+    border: 0.1em solid #ffb633;
+    border-radius: 0.5vw;
+    text-decoration: none !important;
+}
+
+.carousel {
+    display: none;
+}
+
+.separator-container_proyectos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -1.5vw;
+    background: linear-gradient(90deg, #ffb633, #fff);
+}
+
+
+.separator-container_proyectos .top {
+    height: 6.5vw;
+    background-color: #363636;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 0px), 50% 100%, 0 calc(100% - 0px));
+    position: relative;
+    top: -0.15vw;
+
+}
+
+.separator-container_proyectos .bottom {
+    height: 6.5vw;
+    background-color: #363636;
+    clip-path: polygon(0 0, 50% 0px, 100% 0, 100% 100%, 0 100%);
+    margin-top: 0.5px;
+    z-index: 0;
+}

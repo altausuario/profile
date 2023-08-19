@@ -1,0 +1,228 @@
+.container-contacts {
+    width: 100%;
+    background: linear-gradient(to bottom, #363636 0%, #363636 50%, #5c5c5c 50%, #5c5c5c 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 6vw;
+    padding-bottom: 5vw;
+    border-top: 0.15rem solid #ffb633;
+}
+
+.container-contacts::before {
+    content: "";
+    position: absolute;
+    top: 0.4vw;
+    left: 4.8vw;
+    width: 90%;
+    height: 1vw;
+    display: flex;
+    border-top: 0.15rem solid #ffb633;
+}
+
+.h1-contact{
+    font-family: "Anton",sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    letter-spacing: .1vw;
+    text-transform: uppercase;
+    margin-left: 36.5%;
+    margin-top: 3vw;
+}
+
+.h1-contact::before {
+    content: "contactame";
+    position: absolute;
+    background: linear-gradient(90deg, #f5621e, #f1f388);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-contacts::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 46.5vw;
+    z-index: 100;
+    transition: all .6s;
+}
+
+.contacts-logos {
+    max-width: 65vw;
+    position: relative;
+    height: auto;
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    margin: auto;
+    border-bottom: 0.2em solid #838383;
+    border-right: 0.2em solid #838383;
+    border-radius: 2vw 0 2vw 0;
+    box-shadow: 0.15em 0.3em 0.6em #2a2a2a;
+    margin-bottom: 3vw;
+}
+
+.contacts-logos .card {
+    position: relative;
+    width: 13vw !important;
+    height: 13vw;
+    background-color: #fff !important;
+    margin: 15px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    transition: 0.5s;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    border: 0.55vw solid #fff;
+}
+
+
+.contacts-logos .card::before,
+.wsp::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.contacts-logos .card::before {
+    width: 100%;
+    bottom: 0;
+}
+
+.wsp::before {
+    width: 108%;
+    bottom: -1px;
+}
+
+
+.linkedin-contact::before {
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(#1ca7ec),
+            to(#016a9e));
+}
+
+.email-contact::before {
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(#30a9ff),
+            to(#006fbe));
+}
+
+.git-contact::before {
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(#343d47),
+            to(#0c0c0c));
+}
+
+.contacts-logos  .card:hover::before,
+.wsp:hover::before {
+    transition: all 0.5s;
+}
+
+.contacts-logos  .card:hover::before {
+    height: 100%;
+}
+
+.wsp:hover::before {
+    height: 108%;
+}
+
+.contacts-logos  .card .logo-i,
+.wsp .logo-i{
+    color: #2a2a2a !important;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.contacts-logos .card .logo-i {
+    font-size: 6.5vw;
+}
+
+.wsp .logo-i {
+    font-size: 2.5vw !important;
+}
+
+.contacts-logos .card:hover .logo-i,
+.wsp:hover .logo-i {
+    transform: rotateY(360deg);
+    transition: all 0.5s;
+    color: #fff !important;
+}
+
+.container-whatsapp {
+    width: 3.8vw;
+    height: 3.8vw;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border: 0.3vw solid #fff;
+    margin-bottom: 0.3vw;
+    display: flex;
+    margin-left: 2vw;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.wsp::before {
+    background: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(#83ff8f),
+            to(#248f34));
+}
+
+
+.whatsapp-container .logo-i{
+    font-size: 2.5vw;
+    color: #fff;
+}
+
+.container-footer {
+    width: 100%;
+    height: 5vw;
+    background-color: #2a2a2a;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 5vw;
+    padding-top: 0.3vw;
+}
+
+.container-mail,
+.content-footer,
+.style-button__return,
+.text-developer {
+    position: relative;
+}
+
+.content-footer {
+    width: 40%;
+    margin-left: 34%;
+    display: flex;
+    justify-content: space-between;
+}
+.text-developer {
+    color: #ffffff;
+    font-size: 1vw;
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+    top: 0.15vw;
+}

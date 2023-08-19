@@ -1,6 +1,7 @@
 function cambiarColorIcono(btn) {
     $(".btn_scroll i").css("color", "#fff");
-    $(btn).find("i").css("color", "red");
+    $(".btn_scroll").removeClass('scroll-active')
+    $(btn).addClass("scroll-active");
 }
 
 $(function () {

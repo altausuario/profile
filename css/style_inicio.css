@@ -2,7 +2,8 @@
 
 #inicio {
     position: relative;
-    font-family: "Anton",sans-serif;
+    font-family: "Anton", sans-serif;
+    margin: 0;
 }
 
 #inicio .fondo {
@@ -21,11 +22,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 11%!important;
+
     position: relative;
     margin: auto;
-    top: 5vw;
+    top: 15vw;
 }
+
 #inicio .contents .img {
     width: 15vw;
     height: 15vw;
@@ -45,21 +47,47 @@
 }
 
 #inicio .contents .datos {
-   text-align: center;
+    text-align: center;
 }
 
 #inicio .contents .datos h4 {
+
+    font-family: "Anton", sans-serif;
     font-weight: 700;
+    font-size: 1.5vw;
+    letter-spacing: .1vw;
+    text-transform: uppercase;
+
 }
 
 #inicio .contents .datos h2 {
+    font-family: "Anton", sans-serif;
     font-weight: 700;
     font-size: 3vw;
     letter-spacing: .1vw;
     text-transform: uppercase;
 }
 
-#inicio .contents .datos h5 {
-    font-weight: 700;
+#inicio .contents .datos h2::before {
+    content: "alvaro tapias torrijos";
+    position: absolute;
+    background: linear-gradient(90deg, #f5621e, #f1f388);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+#inicio .contents .datos h5 {
+    font-family: "Anton", sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+    letter-spacing: .1vw;
+    text-transform: uppercase;
+}
+
+#inicio .contents .datos h5::before {
+    content: "Software Developer";
+    position: absolute;
+    background: linear-gradient(90deg, #f5621e, #f1f388);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
