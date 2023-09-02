@@ -130,7 +130,7 @@
             },
             {
                 "NAME": "COSTCONTROL",
-                "DESCRIPTON": "Soy yo",
+                "DESCRIPTON": "COSTCONTROL es una plataforma imaginaria diseñada para mejorar la gestión de ingresos y gastos. La plataforma incluye un avanzado sistema de generación de informes y la capacidad de realizar balances, entre otras funciones. Este proyecto nace como respuesta a un desafío planteado en un curso en línea de Django, con el propósito de ofrecer una solución efectiva para la contabilidad financiera.",
                 "PROGRAMMING_LANGUAGES": [
                     {
                         "URL": "img/icon/html.png"
@@ -177,7 +177,7 @@
             },
             {
                 "NAME": "FOR ALL ANIME (DJANGO)",
-                "DESCRIPTON": "Soy yo",
+                "DESCRIPTON": "FOR ALL ANIME en Django es un proyecto diseñado para elevar aún más la calidad de mi primer proyecto y poner a prueba las habilidades y conocimientos que he adquirido. Este proyecto se caracteriza por ofrecer una experiencia de usuario notablemente mejorada y una navegación más fluida por la plataforma.",
                 "PROGRAMMING_LANGUAGES": [
                     {
                         "URL": "img/icon/html.png"
@@ -200,6 +200,9 @@
                     },
                     {
                         "URL": "img/icon/postgreSQL.png"
+                    },
+                    {
+                        "URL": "img/icon/git.png"
                     }
                 ],
                 "IMAGES": [
@@ -220,13 +223,13 @@
                 "URL_REPO": "https://github.com/altausuario/Cost-Control-S.A"
             }
         ],
-        "WORK_EXPERIENCE_DESCRIPTION": "sOY YOPÉ"
+        "WORK_EXPERIENCE_DESCRIPTION": "Durante un período de 6 meses, trabajé bajo un contrato de aprendizaje desde el 15 de febrero de 2023 hasta el 16 de agosto de 2023, desempeñando el rol de APRENDIZ SENA en el programa tecnólogo en análisis y desarrollo de sistemas de información. Durante este tiempo, adquirí conocimientos en una variedad de lenguajes y tecnologías, incluyendo Python, Java, Django, C, C++, C#, y PostgreSQL. Complementé mi formación a través de cursos en línea, aplicando algunos de estos conocimientos en el desarrollo de proyectos como COSTCONTROL y FOR ALL ANIME."
     },
     "CONTACTOS": {
         "LINKEDIN": "https://www.linkedin.com/in/alvaro-tapias-torrijos-003a9121a/",
         "GITHUB": "https://github.com/altausuario",
         "EMAIL": "tapiastorrijosalvaro@gmail.com",
         "WHATSAPP": "3154787021",
-        "TEXT_DEVELOPER": "pk"
+        "TEXT_DEVELOPER": "© 2023 Creado por Alvaro Tapias Torrijos"
     }
 }
