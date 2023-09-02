@@ -1,8 +1,232 @@
 {
-    "FIRST_NAME": "Alvaro",
-    "LAST_NAME": "Tapias Torrijos",
-    "ABOUT_ME": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque architecto quisquam labore numquam sequi. Iste, rem ut. Quia soluta mollitia molestiae dolores voluptate unde possimus beatae, optio nihil veritatis cum, libero perferendis itaque, cupiditate est enim? Nihil facilis, voluptates ullam repellat sequi perferendis harum fuga vero veniam beatae maiores nisi voluptatem dicta sit magni illum minus et placeat nobis assumenda? Velit distinctio autem facere recusandae minima inventore aliquid a ea nam, odio repellendus, ipsa vitae ducimus eos similique quibusdam esse architecto tempore. Deleniti nostrum nesciunt eveniet quas iure? Odit nostrum, est deserunt voluptates, suscipit fuga, quas aut quae eligendi consectetur inventore odio cum labore asperiores harum vero quasi illum necessitatibus officiis aliquam alias fugit unde totam dolorum. Distinctio a in doloremque recusandae eos voluptate, alias dolores aspernatur fugiat, veniam corrupti quia deleniti esse fuga culpa debitis molestiae ea possimus quae reiciendis. Nobis asperiores vitae minus maxime enim, ipsam ut vero.",
-    "DATOS_PERSONALES":{
-        "cel": ""
+    "INICIO": {
+        "FULL_NAME": "Alvaro Tapias Torrijos",
+        "IMAGE": "img/foto_hojavida.png"
+    },
+    "SOBRE_MI": {
+        "IMAGE": "img/alvaro.png",
+        "DESCRIPTION": "Soy un tecnólogo especializado en el desarrollo de software, impulsado por una pasión profunda hacia la tecnología y con un firme anhelo de canalizar mis conocimientos y destrezas en proyectos de vanguardia. Mi perfil se distingue por ser el de un desarrollador inquisitivo y autodidacta, incesantemente avocándome a explorar novedosas tecnologías y herramientas que enriquezcan mis habilidades. Mi entusiasmo por asumir nuevos retos es inquebrantable, respaldado por una actitud optimista y una perseverancia incansable.",
+        "DONWLOAD_CV": "pdfs/curriculum-vitae.pdf",
+        "DONWLOAD_CV_NAME": "CV_AlvaroTapiasTorrijos_AGOSTO-2023"
+    },
+    "CONOCIMIENTOS": {
+        "PROGRAMMING_LANGUAGES":[
+            {
+                "NAME": "html",
+                "URL_IMAGE":"img/icon/html.png"
+            },
+            {
+                "NAME": "css",
+                "URL_IMAGE":"img/icon/css.png"
+            },
+            {
+                "NAME": "javascript",
+                "URL_IMAGE":"img/icon/js.png"
+            },
+            {
+                "NAME": "python",
+                "URL_IMAGE":"img/icon/python.png"
+            },
+            {
+                "NAME": "java",
+                "URL_IMAGE":"img/icon/java.png"
+            },
+            {
+                "NAME": "django",
+                "URL_IMAGE":"img/icon/django.png",
+                "CLASS": ""
+            },
+            {
+                "NAME": "c",
+                "URL_IMAGE":"img/icon/c.png"
+            },
+            {
+                "NAME": "c++",
+                "URL_IMAGE":"img/icon/c++.png"
+            },
+            {
+                "NAME": "si sharp",
+                "URL_IMAGE":"img/icon/cS.png"
+            },
+            {
+                "NAME": "php",
+                "URL_IMAGE":"img/icon/php.png"
+            },
+            {
+                "NAME": "sprint boot",
+                "URL_IMAGE":"img/icon/spring boot.png"
+            },
+            {
+                "NAME": "git",
+                "URL_IMAGE":"img/icon/git.png"
+            },
+            {
+                "NAME": "postgresql",
+                "URL_IMAGE":"img/icon/postgreSQL.png"
+            },
+            {
+                "NAME": "mysql",
+                "URL_IMAGE":"img/icon/mySQL.png"
+            },
+            {
+                "NAME": "uml",
+                "URL_IMAGE":"img/icon/uml.png"
+            },
+            {
+                "NAME": "uml",
+                "URL_IMAGE":"img/icon/uml.png"
+            },
+            {
+                "NAME": "RESPONSIVE",
+                "URL_IMAGE":"img/icon/Responsive.png"
+            },
+            {
+                "NAME": "BOOTSTRAP",
+                "URL_IMAGE":"img/icon/bootstrap.png"
+            }
+
+        ],
+        "STUDIES_DESCRIPTION": "Durante mi trayectoria de formación tecnológica, consolidé mis conocimientos en una gama diversa de lenguajes de programación, entre los que se destacan Python, Java, PHP, C, C++, y C#, además de adentrarme en los principios de la programación orientada a objetos y en la creación de diagramas de flujo. No obstante, mi compromiso inquebrantable con el perfeccionamiento continuo me condujo hacia la ampliación constante de mi educación, mediante la participación en cursos en línea a través de plataformas digitales de renombre. Estos cursos no solo me brindaron la oportunidad de explorar nuevas tecnologías y herramientas que enriquecieron mis habilidades, sino que también me mantuvieron al corriente de las últimas tendencias y adelantos en el vasto terreno de la programación."
+    },
+    "PROYECTOS": {
+        "LIST_PROJECTS": [
+            {
+                "NAME": "FOR ALL ANIME (JAVA)",
+                "DESCRIPTON": "FOR ALL ANIME es una plataforma que busca ofrecer a los usuarios una experiencia única para disfrutar de contenido multimedia centrado en el género de la animación, con un enfoque especial en la fantasía y personajes animados. Esta iniciativa surge como respuesta a la necesidad de brindar una alternativa a las páginas de descarga de contenido multimedia, como LOCURA ANIME. Nuestra plataforma permite a los usuarios acceder y disfrutar del contenido sin necesidad de descargarlo, ofreciendo comodidad y facilidad de acceso.",
+                "PROGRAMMING_LANGUAGES": [
+                    {
+                        "URL": "img/icon/html.png"
+                    },
+                    {
+                        "URL": "img/icon/css.png"
+                    },
+                    {
+                        "URL": "img/icon/js.png"
+                    },
+                    {
+                        "URL": "img/icon/java.png"
+                    },
+                    {
+                        "URL": "img/icon/mySQL.png",
+                        "CLASS": ""
+                    }
+                ],
+                "IMAGES": [
+                    {
+                        "URL": "img/costcontrol/login.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/register.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/dasboar.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/sliber.png"
+                    }
+                ],
+                "URL_DEMO": "",
+                "URL_REPO": "https://github.com/altausuario/Cost-Control-S.A"
+            },
+            {
+                "NAME": "COSTCONTROL",
+                "DESCRIPTON": "Soy yo",
+                "PROGRAMMING_LANGUAGES": [
+                    {
+                        "URL": "img/icon/html.png"
+                    },
+                    {
+                        "URL": "img/icon/css.png"
+                    },
+                    {
+                        "URL": "img/icon/js.png"
+                    },
+                    {
+                        "URL": "img/icon/bootstrap.png"
+                    },
+                    {
+                        "URL": "img/icon/python.png"
+                    },
+                    {
+                        "URL": "img/icon/django.png",
+                        "CLASS": ""
+                    },
+                    {
+                        "URL": "img/icon/postgreSQL.png"
+                    },
+                    {
+                        "URL": "img/icon/git.png"
+                    }
+                ],
+                "IMAGES": [
+                    {
+                        "URL": "img/costcontrol/login.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/register.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/dasboar.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/sliber.png"
+                    }
+                ],
+                "URL_DEMO": "",
+                "URL_REPO": "https://github.com/altausuario/Cost-Control-S.A"
+            },
+            {
+                "NAME": "FOR ALL ANIME (DJANGO)",
+                "DESCRIPTON": "Soy yo",
+                "PROGRAMMING_LANGUAGES": [
+                    {
+                        "URL": "img/icon/html.png"
+                    },
+                    {
+                        "URL": "img/icon/css.png"
+                    },
+                    {
+                        "URL": "img/icon/js.png"
+                    },
+                    {
+                        "URL": "img/icon/bootstrap.png"
+                    },
+                    {
+                        "URL": "img/icon/python.png"
+                    },
+                    {
+                        "URL": "img/icon/django.png",
+                        "CLASS": ""
+                    },
+                    {
+                        "URL": "img/icon/postgreSQL.png"
+                    }
+                ],
+                "IMAGES": [
+                    {
+                        "URL": "img/costcontrol/login.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/register.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/dasboar.png"
+                    },
+                    {
+                        "URL": "img/costcontrol/sliber.png"
+                    }
+                ],
+                "URL_DEMO": "",
+                "URL_REPO": "https://github.com/altausuario/Cost-Control-S.A"
+            }
+        ],
+        "WORK_EXPERIENCE_DESCRIPTION": "sOY YOPÉ"
+    },
+    "CONTACTOS": {
+        "LINKEDIN": "https://www.linkedin.com/in/alvaro-tapias-torrijos-003a9121a/",
+        "GITHUB": "https://github.com/altausuario",
+        "EMAIL": "tapiastorrijosalvaro@gmail.com",
+        "WHATSAPP": "3154787021",
+        "TEXT_DEVELOPER": "pk"
     }
 }

@@ -21,10 +21,11 @@
     <link rel="stylesheet" href="css/s.css">
 
     <link rel="stylesheet" href="css/style_responsive.css">
-    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="js/funcion_datos.js"></script>
     <script defer src="js/funciones_scroll.js"></script>
     <script defer src="js/funcion_animacion.js"></script>
+    <!-- <script src="js/pruebas.js"></script> -->
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -63,7 +64,7 @@
             <div class="fondo"></div>
             <div class="contents">
                 <div class="img animation-image-home">
-                    <img src="img/foto_hojavida.png" alt="">
+                    <img src="" alt="" id="profile_photo">
                 </div>
                 <div class="datos animation-greet-home">
                     <h4>!HOLA¡ Soy</h4>
@@ -81,16 +82,15 @@
                     <div class="cont_img">
                         <div class="img">
                             <article class="img_container">
-                                <img src="img/alvaro.png" alt="">
+                                <img src="" alt="" id="profile_picture_about_me">
                             </article>
                         </div>
                     </div>
                     <div class="datos">
-                        <p id="sobre_mi"></p>
+                        <p id="description_about_me"></p>
                     </div>
                 </section>
-                <a href="pdfs/curriculum-vitae.pdf" download="CV_AlvaroTapiasTorrijos_AGOSTO-2023"
-                    class="btn btn-light ml-auto ">DESCARGAR CV</a>
+                <a href="" class="btn btn-light ml-auto " id="download_cv">DESCARGAR CV</a>
             </div>
         </section>
         <!-- CONOCIMIENTO -->
@@ -98,50 +98,7 @@
             <div class="contents-conocimiento">
                 <h1 class="h1-title-conocimiento color-white title-font">Conocimientos</h1>
                 <div class="container-info-tecnologias-conocimiento">
-                    <article class="main-container-left">
-                        <section class="container-tech-left">
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/html.png" alt="HTML" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">HTML</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/css.png" alt="CSS" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">CSS</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/js.png" alt="JavaScript" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">JavaScript</h3>
-                            </div>
-                        </section>
-                        <section class="container-tech-left">
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/python.png" alt="PYTHON" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">PYTHON</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/java.png" alt="JAVA" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">JAVA</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/django.png" alt="DJANGO" class="style-logo-tech icon">
-                                <h3 class="style-text__title-tech">DJANGO</h3>
-                            </div>
-                        </section>
-                        <section class="container-tech-left">
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/c.png" alt="C" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">C</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/c++.png" alt="C++" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">C++</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/cS.png" alt="SI SHARP" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">SI SHARP</h3>
-                            </div>
-                        </section>
-
+                    <article class="main-container-left" id="main-container-left">
                     </article>
                     <div class="container__computer-video">
                         <div class="container-computer">
@@ -152,67 +109,11 @@
                                 src="https://machewasinger.github.io/mawportfolio/static/media/logo-dark-mode.1fbddd08.mp4"></video>
                         </div>
                     </div>
-                    <div class="main-container-right">
-                        <section class="container-tech-right">
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/php.png" alt="PHP" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">PHP</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/spring boot.png" alt="SPRINT BOOT" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">SPRINT BOOT</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/git.png" alt="GIT" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">GIT</h3>
-                            </div>
-                        </section>
-                        <section class="container-tech-right">
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/postgreSQL.png" alt="PostgreSQL" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">PostgreSQL</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/mySQL.png" alt="MySQL" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">MySQL</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/uml.png" alt="UMP" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">UML</h3>
-                            </div>
-                        </section>
-                        <section class="container-tech-right">
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/uml.png" alt="UML" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">UML</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/Responsive.png" alt="RESPONSIVE" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">RESPONSIVE</h3>
-                            </div>
-                            <div class="container__logo-title-tech">
-                                <img src="img/icon/bootstrap.png" alt="BOOTSTRAP" class="style-logo-tech">
-                                <h3 class="style-text__title-tech">BOOTSTRAP</h3>
-                            </div>
-                        </section>
-                    </div>
+                    <div class="main-container-right" id="main-container-right"></div>
                 </div>
                 <div class="container-data-estudios">
                     <h4 class="title-estudios">Estudios</h4>
-                    <p class="text-estudios">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo ut ad ea veritatis at facilis
-                        tempore reprehenderit quos cumque maxime illum iste explicabo rem eius quis ipsam totam
-                        asperiores esse, ex exercitationem omnis hic perferendis odio est. Dolore earum nam asperiores
-                        eum accusamus incidunt, voluptatum corrupti unde et provident autem repudiandae omnis eveniet
-                        possimus! Aut temporibus ullam ab beatae. Facere maiores, ex neque explicabo ab incidunt natus
-                        quisquam omnis sint recusandae. Alias nulla praesentium eaque voluptate eius voluptates
-                        corporis, voluptatum neque, ipsum vitae velit. Officia nesciunt commodi nostrum est illo.
-                        Consectetur, quos. Perspiciatis provident consequatur, velit asperiores labore sed maiores qui
-                        incidunt optio quam error et. Rerum ratione eveniet magni amet, sapiente quos quae impedit est!
-                        Perferendis voluptatem quaerat similique ea. Provident quia corrupti asperiores beatae aliquid
-                        totam vitae aspernatur rem illum atque, soluta, eius dolorum expedita nulla sint sapiente
-                        quaerat enim dolorem, officia distinctio nostrum minima maxime! Recusandae, laudantium.
-                    </p>
+                    <p class="text-estudios" id="studies_description"></p>
                 </div>
             </div>
         </section>
@@ -222,71 +123,14 @@
                 <h1 class="h1-project">proyectos</h1>
                 <article class="container-subtitle-project">
                     <p class="text-subtitle-project">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem hic, consequatur necessitatibus
-                        sequi assumenda tenetur.
+                        MIS PROYECTOS ESTÁN ORDENADOS EN ORDEN DESCENDENTE PARA DEMOSTRAR LA EVOLUCIÓN DE MI CÓDIGO.
                     </p>
                 </article>
-                <div class="content-projects">
-                    <article class="content-project">
-                        <span class="content-project-imgs">
-                            <div class="slime-imgs">
-                                <ul>
-                                    <li>
-                                        <img loading="lazy" src="img/costcontrol/login.png" alt="">
-                                    </li>
-                                    <li>
-                                        <img loading="lazy" src="img/costcontrol/register.png" alt="">
-                                    </li>
-                                    <li>
-                                        <img loading="lazy" src="img/costcontrol/dasboar.png" alt="">
-                                    </li>
-                                    <li>
-                                        <img loading="lazy" src="img/costcontrol/sliber.png" alt="">
-                                    </li>
-                                </ul>
-                            </div>
-                        </span>
-                        <div class="container-tech container__text-tech__project-1">
-                            <h1 class="number-project">01.</h1>
-                            <h3 class="title-project">costcontrol</h3>
-                            <div class="container-description-project">
-                                <p class="text-description-project">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A error voluptates impedit
-                                    perspiciatis? Repellat mollitia enim sed culpa alias quos est sit ducimus deserunt?
-                                    Sapiente voluptatem quod sequi nesciunt odit corrupti error! Quisquam itaque odio
-                                    sed, tenetur debitis at fugiat, assumenda similique quas iste unde eligendi ut
-                                    tempora deserunt porro necessitatibus dolor nesciunt placeat sit corrupti error?
-                                    Deserunt, dolore? Dolorum!
-                                </p>
-                            </div>
-                            <div class="container-icon-techs-project">
-                                <img src="img/icon/html.png">
-                                <img src="img/icon/css.png">
-                                <img src="img/icon/js.png">
-                                <img src="img/icon/bootstrap.png">
-                                <img src="img/icon/python.png">
-                                <img src="img/icon/django.png" class="icon">
-                                <img src="img/icon/postgreSQL.png">
-                            </div>
-                            <div class="container-project-see">
-                                <a href="https://www.costcontrol.com.co/" class="project-styl-a"
-                                    target="_blank">Demo</a>
-                                <a href="index2.html" target="_blank">Repo</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                <div class="content-projects" id="content-projects"></div>
                 <article class="container-experience">
                     <h4 class="title-experience">Experiencia laboral</h4>
                     <h5>(Experiencia gral: 1 año y 4 meses)</h5>
-                    <p class="text-experience">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae autem
-                        repudiandae quo neque, distinctio beatae amet reiciendis natus a debitis, pariatur nisi ex
-                        consectetur aliquam eum quas repellendus consequuntur minima nesciunt accusantium? Nesciunt
-                        omnis reprehenderit, qui dolorum fugit porro animi quia sapiente, nostrum odio ad
-                        necessitatibus, neque sed quos fugiat voluptatem nihil eum amet recusandae distinctio voluptatum
-                        illum dolor repudiandae!
-
-                    </p>
+                    <p class="text-experience" id="work_experience_description"></p>
                 </article>
             </div>
         </section>
@@ -296,18 +140,18 @@
                 <div class="content-contacts">
                     <h1 class="h1-contact">Contactame</h1>
                     <div class="contacts-logos">
-                        <a href="https://www.linkedin.com/in/alvaro-tapias-torrijos-003a9121a/"
-                            class="card linkedin-contact" target="_blank">
+                        <a href="#"
+                            class="card linkedin-contact" target="_blank" id="url_linkedin">
                             <div class="content-logo-contact">
                                 <i class="fa-brands fa-linkedin-in logo-i"></i>
                             </div>
                         </a>
-                        <a href="https://github.com/altausuario" class="card git-contact" target="_blank">
+                        <a href="#" class="card git-contact" target="_blank" id="url_github">
                             <div class="content-logo-contact">
                                 <i class="fa-brands fa-github logo-i"></i>
                             </div>
                         </a>
-                        <a href="mailto: tapiastorrijosalvaro@gmail.com" class="card email-contact" target="_blank">
+                        <a href="#" class="card email-contact" target="_blank" id="url_email">
                             <div class="content-logo-contact">
                                 <i class="fa-solid fa-envelope logo-i"></i>
                             </div>
@@ -315,23 +159,20 @@
                     </div>
                 </div>
                 <div class="container-footer">
-                    <a class="wsp container-whatsapp" href="https://wa.me/3154787021" target="_blank">
+                    <a class="wsp container-whatsapp" href="#" target="_blank" id="url_whatsapp">
                         <div class="whatsapp-container">
                             <i class="fab fa-whatsapp whatsapp-icon logo-i"></i>
                         </div>
                     </a>
                     <div class="content-footer">
-                        <p class="text-developer">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dolorem!
+                        <p class="text-developer" id="text_developer">
+                            
                         </p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <footer>
-
-    </footer>
 </body>
 
 </html>

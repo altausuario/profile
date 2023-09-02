@@ -249,7 +249,7 @@
 .container-project-see {
     width: 35% !important;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     margin-top: 0.5vw;
 }
 
@@ -289,6 +289,7 @@
     border: 0.1em solid #ffb633;
     border-radius: 0.5vw;
     text-decoration: none !important;
+    margin-left: 10px;
 }
 
 .carousel {
