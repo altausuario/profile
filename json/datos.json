@@ -7,7 +7,7 @@
         "IMAGE": "img/alvaro.png",
         "DESCRIPTION": "Soy un tecnólogo especializado en el desarrollo de software, impulsado por una pasión profunda hacia la tecnología y con un firme anhelo de canalizar mis conocimientos y destrezas en proyectos de vanguardia. Mi perfil se distingue por ser el de un desarrollador inquisitivo y autodidacta, incesantemente avocándome a explorar novedosas tecnologías y herramientas que enriquezcan mis habilidades. Mi entusiasmo por asumir nuevos retos es inquebrantable, respaldado por una actitud optimista y una perseverancia incansable.",
         "DONWLOAD_CV": "pdfs/curriculum-vitae.pdf",
-        "DONWLOAD_CV_NAME": "CV_AlvaroTapiasTorrijos_SEPTIEMBRE-2023"
+        "DONWLOAD_CV_NAME": "CV_AlvaroTapiasTorrijos_DICIEMBRE-2023"
     },
     "CONOCIMIENTOS": {
         "PROGRAMMING_LANGUAGES":[
@@ -73,8 +73,8 @@
                 "URL_IMAGE":"img/icon/uml.png"
             },
             {
-                "NAME": "uml",
-                "URL_IMAGE":"img/icon/uml.png"
+                "NAME": "Laravel",
+                "URL_IMAGE":"img/icon/Laravel.png"
             },
             {
                 "NAME": "RESPONSIVE",
