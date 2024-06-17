@@ -10,83 +10,183 @@
         "DONWLOAD_CV_NAME": "CV_AlvaroTapiasTorrijos_DICIEMBRE-2023"
     },
     "CONOCIMIENTOS": {
-        "PROGRAMMING_LANGUAGES":[
+        "PROGRAMMING_LANGUAGES": [
             {
                 "NAME": "html",
-                "URL_IMAGE":"img/icon/html.png"
+                "URL_IMAGE": "img/icon/html.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "css",
-                "URL_IMAGE":"img/icon/css.png"
+                "URL_IMAGE": "img/icon/css.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "javascript",
-                "URL_IMAGE":"img/icon/js.png"
+                "URL_IMAGE": "img/icon/js.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "python",
-                "URL_IMAGE":"img/icon/python.png"
+                "URL_IMAGE": "img/icon/python.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "java",
-                "URL_IMAGE":"img/icon/java.png"
+                "URL_IMAGE": "img/icon/java.png",
+                "PUNTAJE": 4
             },
             {
                 "NAME": "django",
-                "URL_IMAGE":"img/icon/django.png",
-                "CLASS": ""
+                "URL_IMAGE": "img/icon/django.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "c",
-                "URL_IMAGE":"img/icon/c.png"
+                "URL_IMAGE": "img/icon/c.png",
+                "PUNTAJE": 3
             },
             {
                 "NAME": "c++",
-                "URL_IMAGE":"img/icon/c++.png"
+                "URL_IMAGE": "img/icon/c++.png",
+                "PUNTAJE": 3
             },
             {
                 "NAME": "si sharp",
-                "URL_IMAGE":"img/icon/cS.png"
+                "URL_IMAGE": "img/icon/cS.png",
+                "PUNTAJE": 3
             },
             {
                 "NAME": "php",
-                "URL_IMAGE":"img/icon/php.png"
+                "URL_IMAGE": "img/icon/php.png",
+                "PUNTAJE": 4
             },
             {
                 "NAME": "sprint boot",
-                "URL_IMAGE":"img/icon/spring boot.png"
+                "URL_IMAGE": "img/icon/spring boot.png",
+                "PUNTAJE": 2
             },
             {
                 "NAME": "git",
-                "URL_IMAGE":"img/icon/git.png"
+                "URL_IMAGE": "img/icon/git.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "postgresql",
-                "URL_IMAGE":"img/icon/postgreSQL.png"
+                "URL_IMAGE": "img/icon/postgreSQL.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "mysql",
-                "URL_IMAGE":"img/icon/mySQL.png"
+                "URL_IMAGE": "img/icon/mySQL.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "uml",
-                "URL_IMAGE":"img/icon/uml.png"
+                "URL_IMAGE": "img/icon/uml.png",
+                "PUNTAJE": 5
             },
             {
                 "NAME": "Laravel",
-                "URL_IMAGE":"img/icon/Laravel.png"
+                "URL_IMAGE": "img/icon/Laravel.png",
+                "PUNTAJE": 3
             },
             {
-                "NAME": "RESPONSIVE",
-                "URL_IMAGE":"img/icon/Responsive.png"
+                "NAME": "Responsive",
+                "URL_IMAGE": "img/icon/Responsive.png",
+                "PUNTAJE": 5
             },
             {
-                "NAME": "BOOTSTRAP",
-                "URL_IMAGE":"img/icon/bootstrap.png"
+                "NAME": "Bootstrap",
+                "URL_IMAGE": "img/icon/bootstrap.png",
+                "PUNTAJE": 4
             }
-
         ],
         "STUDIES_DESCRIPTION": "Durante mi trayectoria de formación tecnológica, consolidé mis conocimientos en una gama diversa de lenguajes de programación, entre los que se destacan Python, Java, PHP, C, C++, y C#, además de adentrarme en los principios de la programación orientada a objetos y en la creación de diagramas de flujo. No obstante, mi compromiso inquebrantable con el perfeccionamiento continuo me condujo hacia la ampliación constante de mi educación, mediante la participación en cursos en línea a través de plataformas digitales de renombre. Estos cursos no solo me brindaron la oportunidad de explorar nuevas tecnologías y herramientas que enriquecieron mis habilidades, sino que también me mantuvieron al corriente de las últimas tendencias y adelantos en el vasto terreno de la programación."
+    },
+    "ESTUDIOS": {
+        "LIST_STUDIES": [
+            {
+                "DATE_START": "08/2021",
+                "DATE_END": "08/2023",
+                "NAME": "Análisis y Desarrollo de Sistemas de Informacion",
+                "TYPE": "TECNOLOGO",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "05/2022",
+                "DATE_END": "08/2023",
+                "NAME": "Desarrollador de Software",
+                "TYPE": "TECNOLOGO",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "09/2022",
+                "DATE_END": "08/2023",
+                "NAME": "inicialisacion a la Inteligencia Artificial",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "11/2022",
+                "DATE_END": "08/2023",
+                "NAME": "Fundamentos del Modelado de Software con UML",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "12/2022",
+                "DATE_END": "08/2023",
+                "NAME": "Maqutacion de Sitios Web con HTML5 y CSS3",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "12/2022",
+                "DATE_END": "08/2023",
+                "NAME": "Aprobación de Conceptos en Ciberceguridad",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "12/2021",
+                "DATE_END": "08/2023",
+                "NAME": "Técnicas de Diagnostico en Ciberseguridad",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "12/2021",
+                "DATE_END": "08/2023",
+                "NAME": "Variables y Estructuras de Control en Python",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "12/2021",
+                "DATE_END": "08/2023",
+                "NAME": "Hackathon de Ciberceguridad",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            },
+            {
+                "DATE_START": "12/2021",
+                "DATE_END": "08/2023",
+                "NAME": "Bootcamps de Ciberseguridad",
+                "TYPE": "Curso",
+                "FACILITY": "Servicio Nacional de Aprendizaje SENA",
+                "DESCRIPTION": ""
+            }
+        ]
     },
     "PROYECTOS": {
         "LIST_PROJECTS": [
@@ -230,6 +330,6 @@
         "GITHUB": "https://github.com/altausuario",
         "EMAIL": "tapiastorrijosalvaro@gmail.com",
         "WHATSAPP": "3154787021",
-        "TEXT_DEVELOPER": "© 2023 Creado por Alvaro Tapias Torrijos"
+        "TEXT_DEVELOPER": "© 2024 Creado por Alvaro Tapias Torrijos"
     }
 }

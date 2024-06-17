@@ -11,55 +11,33 @@ function get_sobre_mi(data) {
 }
 
 function get_conocimiento(data) {
-    var datos = data.PROGRAMMING_LANGUAGES;
-    const mitad = Math.ceil(datos.length / 2);
-    var main_container_left = $('#main-container-left')
-    var main_container_right = $('#main-container-right')
-    var max_left = 2
-    var max_right = 0
-
-    var html_left = `<section class="container-tech-left">`
-    var html_right = `<section class="container-tech-right">`
-    $.each(datos, function (index, item) {
-        if (index < mitad) {
-            max_right = index + 3
-            if (index < mitad) {
-                html_left += `<div class="container__logo-title-tech">`
-                if (item.CLASS == "") {
-                    html_left += `<img src="${item.URL_IMAGE}" alt="${item.NAME}" class="style-logo-tech icon">`
-                } else {
-                    html_left += `<img src="${item.URL_IMAGE}" alt="${item.NAME}" class="style-logo-tech">`
-                }
-                html_left += `<h3 class="style-text__title-tech">${item.NAME}</h3>`
-                html_left += `</div>`
-            }
-            if (index == max_left) {
-                html_left += `</section>`
-                main_container_left.append(html_left)
-                html_left = `<section class="container-tech-left">`
-                max_left += 3
-            }
-
-        } else {
-            html_right += `<div class="container__logo-title-tech">`
-            if (item.CLASS == "") {
-                html_right += `<img src="${item.URL_IMAGE}" alt="${item.NAME}" class="style-logo-tech icon">`
-            } else {
-                html_right += `<img src="${item.URL_IMAGE}" alt="${item.NAME}" class="style-logo-tech">`
-            }
-            html_right += `<h3 class="style-text__title-tech">${item.NAME}</h3>`
-            html_right += `</div>`
-
-            if (index == max_right) {
-                html_right += `</section>`
-                main_container_right.append(html_right)
-                html_right = `<section class="container-tech-right">`
-                max_right += 3
-            }
-        }
+    var datos = data.PROGRAMMING_LANGUAGES
+    const content_conocimientos = $('#content_conocimientos')
+    datos.forEach(d => {
+        var html = `<article class="cart__conocimientos">`
+        html += `<div class="cart__conocomientos__container">`
+        html += `<img src="${d.URL_IMAGE}">`
+        html += `<h3>${d.NAME}</h3>`
+        html += `<div class="rating" data-rating="${d.PUNTAJE}">`
+        html += `</div>`
+        html += `</div>`
+        html += `</article>`
+        content_conocimientos.append(html)
     });
 
-    $('#studies_description').text(data.STUDIES_DESCRIPTION)
+    $('.rating').each(function() {
+        const ratingValue = parseInt($(this).data('rating'));
+        const starsTotal = 5;
+        for (let i = 1; i <= starsTotal; i++) {
+            const star = $('<i>').addClass('fas fa-star');
+            if (i <= ratingValue) {
+                star.addClass('fa');
+            } else {
+                star.addClass('fa-star-o');
+            }
+            $(this).append(star);
+        }
+    });
 }
 
 function get_proyectos(data) {

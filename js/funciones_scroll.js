@@ -38,6 +38,16 @@ $(function () {
         });
     });
 
+    $('#scrollStudies').click(function () {
+        clicking = true
+        cambiarColorIcono(this);
+        $('html, body').animate({
+            scrollTop: $('#estudios').offset().top
+        }, 1000, function () {
+            clicking = false
+        });
+    });
+
     $('#scrollProyectos').click(function () {
         clicking = true
         cambiarColorIcono(this);
@@ -68,6 +78,7 @@ $(function () {
         var divInicio = $('#inicio').offset().top;
         var divSobreMi = $('#sobreMi').offset().top;
         var divConocimientos = $('#conocimientos').offset().top;
+        var divEstudios = $('#estudios').offset().top;
         var divProyectos = $('#proyectos').offset().top;
         var divContato = $('#contato').offset().top;
 
@@ -82,10 +93,13 @@ $(function () {
             } else if (windowTop >= divSobreMi - margin && windowTop < divConocimientos - margin) {
                 buton = $('#scrollSobreMi')
                 cambiarColorIcono(buton)
-            } else if (windowTop >= divConocimientos - margin && windowTop < divProyectos - margin) {
+            } else if (windowTop >= divConocimientos - margin && windowTop < divEstudios - margin) {
                 buton = $('#scrollConocimientos')
                 cambiarColorIcono(buton)
-            } else if (windowTop >= divProyectos - margin && windowTop < divContato - margin) {
+            }else if (windowTop >= divEstudios - margin && windowTop < divProyectos - margin){
+                buton = $('#scrollStudies')
+                cambiarColorIcono(buton)
+            }else if (windowTop >= divProyectos - margin && windowTop < divContato - margin) {
                 buton = $('#scrollProyectos')
                 cambiarColorIcono(buton)
             } else if (windowTop >= divContato - margin) {

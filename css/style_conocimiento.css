@@ -1,6 +1,6 @@
 .contents-conocimiento {
     width: 100%;
-    height: 70vw;
+    height: auto;
     background-color: rgb(101, 101, 101);
     padding-bottom: 5vw;
     display: flex;
@@ -52,168 +52,84 @@
     -webkit-text-fill-color: transparent;
 }
 
+/*contenedor*/
+
 .container-info-tecnologias-conocimiento {
-    width: 100% !important;
-    height: 44.3vw;
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    margin-top: 6vw;
-    overflow: hidden !important;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    margin-top: 10%;
+    max-width: 90%;
 }
 
+/*conosimientos*/
 
-.main-container-left,
-.main-container-right {
-    width: 28%;
-    height: 35vw;
+.cart__conocimientos {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cart__conocimientos::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg, #e9043a, #eff307);
+    inset: -100px 50px;
+    transition: 0.8s;
+    animation: animation 5s linear infinite;
+}
+
+.cart__conocimientos:hover::before {
+    inset: -60px -100px;
+}
+
+.cart__conocimientos::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.cart__conocomientos__container {
+    position: absolute;
+    inset: 5px;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    top: 5vw;
-}
-
-.main-container-left {
-    margin-left: 2vw;
-}
-
-.main-container-right {
-    margin-right: 2vw;
-}
-
-.container-tech-left,
-.container-tech-right {
-    width: 100%;
-    height: 10vw;
-    border-radius: 25px;
-    padding-bottom: 0.5vw;
-    display: flex;
-    position: relative;
-}
-
-.container-tech-left::before,
-.container-tech-right::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10vw;
-    border-radius: 25px;
-    box-shadow: 0.1em 0.15em 0.2em #000;
-    background-color: #2a2a2a;
-    opacity: .5;
-}
-
-.container__computer-video {
-    width: 24vw;
-    height: 46.5vw;
-}
-
-.container-computer {
-    width: 40vw;
-}
-
-.container-computer::before {
-    content: "";
-    position: absolute;
-    top: 11.8vw;
-    right: 36vw;
-    width: 27.5vw;
-    height: 20vw;
-    border-radius: 2vw;
-    background-color: #2a2a2a;
-}
-
-.container-computer img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    top: 9vw;
-    right: 8vw;
-    z-index: 10 !important;
-}
-
-
-.container-notificactions {
-    width: 17.3vw;
-    color: #fff;
-    font-weight: 400;
-    position: relative;
-    bottom: 2.4vw;
-    left: 0.8vw;
-}
-
-.container-top-left {
-    width: 1.9vw;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.65vw;
-    margin-right: 0.3vw;
-}
-
-
-.container__notifications-video-apps video {
-    width: 10.42vw;
-    height: 10.42vw;
-    position: relative;
-    bottom: 10vw;
-    left: 7vw;
-}
-
-.style-text__title-tech {
-    color: #fff;
-    text-shadow: 1px 2px 3px #000;
-    font-family: "Inter", sans-serif;
-    font-size: 1vw;
-    font-weight: 900 !important;
-    letter-spacing: 1px;
-    position: relative;
-    top: 0.5vw;
-}
-
-.style-logo-tech {
-    width: 6.51vw;
-    height: 6.51vw;
-    padding: 0.2vw;
-    transition-duration: 0.5s;
-}
-
-.container__logo-title-tech {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 1.2vw;
-    position: relative;
-    text-transform: uppercase;
+    justify-content: center;
 }
 
-.container-data-estudios {
-    display: grid;
-    place-items: center;
-    font-family: "Inter", sans-serif;
-    position: relative;
-    top: 35vw;
-    margin-top: 12vw;
-  }
-  
-  .title-estudios,
-  .text-estudios {
-    color: #fff;
-  }
-  
-  .title-estudios {
-    font-weight: bold;
-    font-size: 1.5vw;
-  }
-  
-  .text-estudios {
-    width: 50%;
-    font-size: 1.2vw;
-    font-weight: 300 !important;
-    text-align: justify !important;
-    line-height: 1.6;
-  }
+.cart__conocomientos__container img {
+    width: 70%;
+    border-radius: 15px;
+}
+
+.cart__conocomientos__container h3 {
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* style del porcntaje */
+
+.cart__conocomientos__container .rating {
+    font-size: 0;
+}
+
+.cart__conocomientos__container .rating .fa {
+    font-size: 20px;
+    color: #ffc107;
+}
+
+.cart__conocomientos__container .rating .fa-star-o {
+    font-size: 20px;
+    color: #ddd;
+}

@@ -12,21 +12,21 @@
     <title>Portafolio ATT</title>
     <link title="image/png" rel="icon" href="img/foto_hojavida.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_inicio.css">
     <link rel="stylesheet" href="css/style_sobre_mi.css">
     <link rel="stylesheet" href="css/style_conocimiento.css">
+    <link rel="stylesheet" href="css/style-estudios.css">
     <link rel="stylesheet" href="css/style_projects.css">
     <link rel="stylesheet" href="css/style_contacts.css">
     <link rel="stylesheet" href="css/style_animation.css">
-    <link rel="stylesheet" href="css/s.css">
 
     <link rel="stylesheet" href="css/style_responsive.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="js/funcion_datos.js"></script>
     <script defer src="js/funciones_scroll.js"></script>
     <script defer src="js/funcion_animacion.js"></script>
-    <!-- <script src="js/pruebas.js"></script> -->
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -50,6 +50,10 @@
             <!-- BTN CONOCIMIENTOS -->
             <article class="btn_scroll" id="scrollConocimientos">
                 <i class="fa-solid fa-code"></i>
+            </article>
+            <!-- BTN ESTUDIOS -->
+            <article class="btn_scroll" id="scrollStudies">
+                <i class="fa-solid fa-user-graduate"></i>
             </article>
             <!-- BTN PROCYETOS -->
             <article class="btn_scroll" id="scrollProyectos">
@@ -81,40 +85,48 @@
                 <h1 class="h1-title h1_sobremi">sobre mi</h1>
                 <section class="cont_sobremi">
                     <div class="cont_img">
-                        <div class="img">
-                            <article class="img_container">
+                        <article class="cart__sobremi">
+                            <div class="cart__sobremi__container">
                                 <img src="" alt="" id="profile_picture_about_me">
-                            </article>
-                        </div>
+                            </div>
+                        </article>
                     </div>
                     <div class="datos">
                         <p id="description_about_me"></p>
                     </div>
                 </section>
-                <a href="" class="btn btn-light ml-auto " id="download_cv">DESCARGAR CV</a>
+                <a href="" class="botton" id="download_cv">DESCARGAR CV</a>
             </div>
         </section>
         <!-- CONOCIMIENTO -->
         <section class="scrollable" id="conocimientos">
             <div class="contents-conocimiento">
                 <h1 class="h1-title-conocimiento color-white title-font">Conocimientos</h1>
-                <div class="container-info-tecnologias-conocimiento">
-                    <article class="main-container-left" id="main-container-left">
+                <div class="container-info-tecnologias-conocimiento" id="content_conocimientos"></div>
+            </div>
+        </section>
+        <!-- ESTUDIOS -->
+        <section class="scrollable" id="estudios">
+            <div class="contents__studies">
+                <h1 class="title__studies">Estudios</h1>
+                <div class="content__studies" id="content__studies">
+                    <article>
+                        <div class="cont__title">
+                            <h4 class="date__study">12/2020 - 06/2023</h4>
+                            <h3 class="title__study">Analisis y desrrollo de sistemas de informacion</h3>
+                        </div>
+                        <div class="cont__instituto__type">
+                            <h4 class="type__study">Tecnologia</h4>
+                            <h4 class="instituto__study">Servicio Nacional de Aprendizaje</h4>
+                        </div>
+                        <div class="cont__description">
+                            <p class="description__study">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Minus consequatur fugit fugiat atque odit doloribus veritatis modi fuga, doloremque
+                                quisquam delectus est ea error quos sequi amet nam cumque ullam expedita temporibus
+                                illum optio. Porro ipsam veniam, itaque iste perferendis consequatur ut fuga obcaecati
+                                ad dolor libero, ipsa ullam vitae.</p>
+                        </div>
                     </article>
-                    <div class="container__computer-video">
-                        <div class="container-computer">
-                            <img src="img/portatil.png" alt="">
-                        </div>
-                        <div class="container__notifications-video-apps">
-                            <video loading="lazy" autoplay="" loop="" class="video"
-                                src=""></video>
-                        </div>
-                    </div>
-                    <div class="main-container-right" id="main-container-right"></div>
-                </div>
-                <div class="container-data-estudios">
-                    <h4 class="title-estudios">Estudios</h4>
-                    <p class="text-estudios" id="studies_description"></p>
                 </div>
             </div>
         </section>
@@ -141,8 +153,7 @@
                 <div class="content-contacts">
                     <h1 class="h1-contact">Contactame</h1>
                     <div class="contacts-logos">
-                        <a href="#"
-                            class="card linkedin-contact" target="_blank" id="url_linkedin">
+                        <a href="#" class="card linkedin-contact" target="_blank" id="url_linkedin">
                             <div class="content-logo-contact">
                                 <i class="fa-brands fa-linkedin-in logo-i"></i>
                             </div>
@@ -167,7 +178,7 @@
                     </a>
                     <div class="content-footer">
                         <p class="text-developer" id="text_developer">
-                            
+
                         </p>
                     </div>
                 </div>
