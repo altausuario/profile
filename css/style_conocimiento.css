@@ -70,7 +70,7 @@
     width: 150px;
     height: 200px;
     margin: 10px;
-    background-color: #ffffff;
+    background-color: #646363;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -92,7 +92,7 @@
     content: '';
     position: absolute;
     inset: 5px;
-    background-color: #ffffff;
+    background-color: #646363;
     border-radius: 10px;
     z-index: 1;
 }
@@ -114,7 +114,7 @@
 
 .cart__conocomientos__container h3 {
     font-size: 1.6rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: 700;
 }
 

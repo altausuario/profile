@@ -13,19 +13,22 @@ function get_sobre_mi(data) {
 function get_conocimiento(data) {
     var datos = data.PROGRAMMING_LANGUAGES
     const content_conocimientos = $('#content_conocimientos')
-    datos.forEach(d => {
-        var html = `<article class="cart__conocimientos">`
-        html += `<div class="cart__conocomientos__container">`
-        html += `<img src="${d.URL_IMAGE}">`
-        html += `<h3>${d.NAME}</h3>`
-        html += `<div class="rating" data-rating="${d.PUNTAJE}">`
-        html += `</div>`
-        html += `</div>`
-        html += `</article>`
-        content_conocimientos.append(html)
-    });
+    datos.forEach((d, index) => {
+        const color1 = getRandomColor();
+        const color2 = getRandomColor();
+        var html = `<article class="cart__conocimientos" data-index="${index}">`;
+        html += `<div class="cart__conocomientos__container">`;
+        html += `<img src="${d.URL_IMAGE}">`;
+        html += `<h3>${d.NAME}</h3>`;
+        html += `<div class="rating" data-rating="${d.PUNTAJE}"></div>`;
+        html += `</div>`;
+        html += `</article>`;
+        content_conocimientos.append(html);
 
-    $('.rating').each(function() {
+        addDynamicStyle(index, color1, color2);
+    });
+    
+    $('.rating').each(function () {
         const ratingValue = parseInt($(this).data('rating'));
         const starsTotal = 5;
         for (let i = 1; i <= starsTotal; i++) {
@@ -47,12 +50,12 @@ function get_estudios(data) {
     datos.forEach(d => {
         var html = `<article>`;
         html += `<div class="cont__title">`
-        if(d.DATE_END != ""){
+        if (d.DATE_END != "") {
             html += `<h4 class="date__study">${d.DATE_START} - ${d.DATE_END}</h4>`
-        }else {
+        } else {
             html += `<h4 class="date__study">${d.DATE_START} - Finalizado</h4>`
         }
-        
+
         html += `<h3 class="title__study">${d.NAME}</h3>`
         html += `</div>`
         html += `<div class="cont__instituto__type">`
@@ -73,59 +76,45 @@ function get_proyectos(data) {
     var number = 1
     datos.forEach(d => {
         var html = `<article class="content-project">`
-        // Carrucel
-        html += `<span class="content-project-imgs">`
-        html += `<div class="slime-imgs">`
-        html += `<ul>`
-        // SE HACE UN FORCHEA PARA EL CARRUCEL
-        var cont = 1
+        html += `<article class="card__slime">`
+        html += `<div class="card__slime__content">`
+        html += `<div class="slime__content">`
+        // Comienso slime
+        html += `<div class="carousel">`
         d.IMAGES.forEach(img => {
-            if (cont <= 4) {
-                html += `<li>`
-                html += `<img loading="lazy" src="${img.URL}">`
-                html += `</li>`
-            }
-            cont++
+            html += `<img src="${img.URL}">`
         })
-        // FIN FOR CARRUCEL
-        html += `</ul>`
+        //Fin slime
         html += `</div>`
-        html += `</span>`
-        // fin carrucel
-        // Datos
+        html += `</div>`
+        html += `</div>`
+        html += `</article>`
         html += `<div class="container-tech container__text-tech__project-1">`
-        html += `<h1 class="number-project">0${number}.</h1>`
+        html += `<h1 class="number-project">${number}</h1>`
         html += `<h3 class="title-project">${d.NAME}</h3>`
         html += `<div class="container-description-project">`
         html += `<p class="text-description-project">${d.DESCRIPTON}</p>`
         html += `</div>`
         html += `<div class="container-icon-techs-project">`
-        // SE HACER UN FOR PARA PONER LAS IMAGENES DE LOS LESNGUAJES DE PROGRAMACION UTILISADOS
-        d.PROGRAMMING_LANGUAGES.forEach(icon => {
-            if (icon.CLASS == "") {
-                html += `<img src="${icon.URL}" class="icon">`
-            } else {
-                html += `<img src="${icon.URL}">`
-            }
+        d.PROGRAMMING_LANGUAGES.forEach(i => {
+            html += `<img src="${i.URL}" class="icon">`
         })
-        // FIN DEL FOR DE LAS IMAGENES DE LOS LESNGUAJES DE PROGRAMACION UTILISADOS
-        html += `</div>`
+        html += ` </div>`
         html += `<div class="container-project-see">`
-        // link del demo
         if (d.URL_DEMO != "") {
             html += `<a href="${d.URL_DEMO}" class="project-style-a" target="_blank">Demo</a>`
         }
-        // link repo
         if (d.URL_REPO != "") {
-            html += `<a href="${d.URL_REPO}" target="_blank">Repo</a>`
+            html += ` <a href="${d.URL_REPO}" target="_blank">Repo</a>`
         }
         html += `</div>`
         html += `</div>`
         html += `</article>`
+
         content_project.append(html)
         number++
     })
-    $('#work_experience_description').text(data.WORK_EXPERIENCE_DESCRIPTION)
+    initializeCarousel()
 }
 
 function get_contato(data) {
@@ -143,7 +132,7 @@ $(document).ready(function () {
         get_sobre_mi(data.SOBRE_MI)
         get_conocimiento(data.CONOCIMIENTOS)
         get_estudios(data.ESTUDIOS)
-        // get_proyectos(data.PROYECTOS)
+        get_proyectos(data.PROYECTOS)
         get_contato(data.CONTACTOS)
     }).fail(function (jqxhr, textStatus, error) {
         console.error('Error cargando el archivo JSON:', textStatus, error);
