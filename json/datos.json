@@ -116,15 +116,15 @@
             },
             {
                 "DATE_START": "05/2022",
-                "DATE_END": "08/2023",
+                "DATE_END": "05/2022",
                 "NAME": "Desarrollador de Software",
-                "TYPE": "TECNOLOGO",
+                "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
                 "DESCRIPTION": ""
             },
             {
                 "DATE_START": "09/2022",
-                "DATE_END": "08/2023",
+                "DATE_END": "09/2022",
                 "NAME": "inicialisacion a la Inteligencia Artificial",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
@@ -132,7 +132,7 @@
             },
             {
                 "DATE_START": "11/2022",
-                "DATE_END": "08/2023",
+                "DATE_END": "11/2022",
                 "NAME": "Fundamentos del Modelado de Software con UML",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
@@ -140,7 +140,7 @@
             },
             {
                 "DATE_START": "12/2022",
-                "DATE_END": "08/2023",
+                "DATE_END": "12/2022",
                 "NAME": "Maqutacion de Sitios Web con HTML5 y CSS3",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
@@ -148,39 +148,39 @@
             },
             {
                 "DATE_START": "12/2022",
-                "DATE_END": "08/2023",
+                "DATE_END": "12/2022",
                 "NAME": "Aprobación de Conceptos en Ciberceguridad",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
                 "DESCRIPTION": ""
             },
             {
-                "DATE_START": "12/2021",
-                "DATE_END": "08/2023",
+                "DATE_START": "12/2022",
+                "DATE_END": "12/2022",
                 "NAME": "Técnicas de Diagnostico en Ciberseguridad",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
                 "DESCRIPTION": ""
             },
             {
-                "DATE_START": "12/2021",
-                "DATE_END": "08/2023",
+                "DATE_START": "12/2022",
+                "DATE_END": "12/2022",
                 "NAME": "Variables y Estructuras de Control en Python",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
                 "DESCRIPTION": ""
             },
             {
-                "DATE_START": "12/2021",
-                "DATE_END": "08/2023",
+                "DATE_START": "12/2022",
+                "DATE_END": "12/2022",
                 "NAME": "Hackathon de Ciberceguridad",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",
                 "DESCRIPTION": ""
             },
             {
-                "DATE_START": "12/2021",
-                "DATE_END": "08/2023",
+                "DATE_START": "12/2022",
+                "DATE_END": "12/2022",
                 "NAME": "Bootcamps de Ciberseguridad",
                 "TYPE": "Curso",
                 "FACILITY": "Servicio Nacional de Aprendizaje SENA",

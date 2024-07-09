@@ -69,13 +69,13 @@
     text-transform: uppercase;
 }
 
-/* #inicio .contents .datos h2::before {
-    content: "leidy juliana porras cala";
+#inicio .contents .datos h2::before {
+    content: "Alvaro Tapias Torrijos";
     position: absolute;
     background: linear-gradient(90deg, #f5621e, #f1f388);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-} */
+}
 
 #inicio .contents .datos h5 {
     font-family: "Anton", sans-serif;
@@ -86,7 +86,7 @@
 }
 
 #inicio .contents .datos h5::before {
-    content: "La mas fea del mundo";
+    content: "software developer";
     position: absolute;
     background: linear-gradient(90deg, #f5621e, #f1f388);
     -webkit-background-clip: text;

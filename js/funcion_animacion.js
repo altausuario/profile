@@ -12,3 +12,25 @@ function animation_home() {
         })
     });
 }
+
+$(document).ready(function() {
+    var $slimeImgs = $(".slime-imgs ul");
+    var $imgs = $slimeImgs.children();
+    var totalImgs = $imgs.length;
+
+    // Clonar imágenes si hay más de 4
+    if (totalImgs > 4) {
+        $imgs.each(function() {
+            var $clone = $(this).clone();
+            $slimeImgs.append($clone);
+        });
+    }
+
+    // Ajustar el ancho del contenedor del slider según la cantidad de imágenes
+    var updatedTotalImgs = $slimeImgs.children().length;
+    $slimeImgs.css("width", updatedTotalImgs * 100 + "%");
+
+    // Ajustar la duración de la animación según la cantidad de imágenes
+    var animationDuration = updatedTotalImgs * 4; // 4s por imagen
+    $(".slime-imgs ul").css("animation-duration", animationDuration + "s");
+});

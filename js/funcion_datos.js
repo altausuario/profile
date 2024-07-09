@@ -40,6 +40,33 @@ function get_conocimiento(data) {
     });
 }
 
+function get_estudios(data) {
+    var datos = data.LIST_STUDIES
+    const content_studies = $('#content__studies')
+
+    datos.forEach(d => {
+        var html = `<article>`;
+        html += `<div class="cont__title">`
+        if(d.DATE_END != ""){
+            html += `<h4 class="date__study">${d.DATE_START} - ${d.DATE_END}</h4>`
+        }else {
+            html += `<h4 class="date__study">${d.DATE_START} - Finalizado</h4>`
+        }
+        
+        html += `<h3 class="title__study">${d.NAME}</h3>`
+        html += `</div>`
+        html += `<div class="cont__instituto__type">`
+        html += `<h4 class="type__study">${d.TYPE}</h4>`
+        html += `<h4 class="instituto__study">${d.FACILITY}</h4>`
+        html += `</div>`
+        html += `<div class="cont__description">`
+        html += `<p class="description__study">${d.DESCRIPTION}</p>`
+        html += `</div>`
+        html += `</article>`
+        content_studies.append(html)
+    })
+}
+
 function get_proyectos(data) {
     var datos = data.LIST_PROJECTS
     const content_project = $('#content-projects')
@@ -115,7 +142,8 @@ $(document).ready(function () {
         get_inicio(data.INICIO)
         get_sobre_mi(data.SOBRE_MI)
         get_conocimiento(data.CONOCIMIENTOS)
-        get_proyectos(data.PROYECTOS)
+        get_estudios(data.ESTUDIOS)
+        // get_proyectos(data.PROYECTOS)
         get_contato(data.CONTACTOS)
     }).fail(function (jqxhr, textStatus, error) {
         console.error('Error cargando el archivo JSON:', textStatus, error);

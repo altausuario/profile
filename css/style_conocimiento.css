@@ -78,7 +78,7 @@
 .cart__conocimientos::before {
     content: '';
     position: absolute;
-    background: linear-gradient(45deg, #e9043a, #eff307);
+    background: linear-gradient(45deg, #e9043a, #78f07e);
     inset: -100px 50px;
     transition: 0.8s;
     animation: animation 5s linear infinite;
